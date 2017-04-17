@@ -1,0 +1,536 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>{$title}</title>
+<meta name="keywords" content="{$title}"/>
+<meta name="description" content="{$title}"/>
+<meta name="360_union_verify" content="87d240f0a33da05602eed7288f254ee6">
+<meta name="domain_verify" content="pmrgi33nmfuw4ir2ejvwk2dvmrqs4y3pnurcyithovuwiir2ei4dizjxgiyggztbgnsdanbrgy2wcmrumi2tcobvgi3tomdgg43tsirmej2gs3lfknqxmzjchiytinbxg42dcobvgm3tcmd5">
+<meta name="360-site-verification" content="20b55b207dc53efce5fdb67983b5c4f4" />
+<link rel="shortcut icon" href="{$url}favicon.ico" />
+
+<style>
+/* 默认样式 */
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+ol,
+ul {
+  list-style: none;
+  list-style-type: none;
+}
+img,
+span,
+a {
+  border: none;
+  vertical-align: middle;
+}
+html {
+  height: 100%;
+  position: relative;
+}
+body {
+  color: #484848;
+  font-family:Arial,Simsun,Microsoft Yahei;
+  font-size: 12px;
+  min-width: 690px;
+  position: relative;
+  margin: 0 auto;
+  height: auto;
+  min-height: 100%;
+}
+body.white {
+  background: #FFFFFF;
+}
+a,
+a:visited {
+  cursor: pointer;
+  text-decoration: none;
+}
+a:active,
+a:focus {
+  text-decoration: none;
+  color: #3b7fc2;
+  background: none;
+}
+::-webkit-input-placeholder {
+  color: #CCC;
+}
+em {
+  display: inline-block !important;
+  *display: inline;
+  *zoom: 1;
+  *line-height: 0;
+  *font-size: 0;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clear {
+  clear: both;
+  height: 0px;
+  line-height: 0px;
+}
+.tc {
+  text-align: center;
+}
+.tr {
+  text-align: right;
+}
+.tl {
+  text-align: left;
+}
+.wrap {
+  width: 1000px;
+  margin: auto;
+}
+
+
+/* header */
+#_domain_nav {
+  margin: 0px auto 35px auto;
+  height: 45px;
+  background: #313131;
+  _overflow: hidden;
+  min-width: 1000px;
+}
+#_domain_nav ul {
+  float: left;
+}
+#_domain_nav ul.sc {
+  width: 36px;
+  height: 45px;
+  float: right;
+  text-align: right;
+  white-space: nowrap;
+}
+#_domain_nav ul.sc a {
+  display: block;
+  padding: 8px;
+  height: 20px;
+  width: 20px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+#_domain_nav li {
+  float: left;
+  border-right: 1px #989898 solid;
+  position: relative;
+  cursor: pointer;
+  width: 120px;
+}
+#_domain_nav li.logo {
+  width: 120px;
+  text-align: center;
+  border-radius: 3px 0 0 3px;
+}
+#_domain_nav li.logo a {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background-position: 0 0;
+  display: block;
+}
+#_domain_nav li.logo a:hover {
+  background-position: 0 -40px;
+}
+#_domain_nav li.logo img {
+    width: 101px;
+    height: 44px;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#_domain_nav li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  z-index: 10;
+  transition: all linear 0.25s;
+  height: 45px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 45px;
+}
+#_domain_nav li a a:visited {
+  color: #fff;
+}
+#_domain_nav li a:hover {
+  background-color: #626262;
+}
+#_domain_nav li a.cur,
+#_domain_nav li a.cur:hover {
+  background-color: #fdb94d;
+}
+#_domain_nav a {
+  color: #fff;
+}
+
+
+/* 定位头部滚动侧栏菜单 */
+#_domain_sub_wrap {
+  height: 35px;
+  margin-bottom: 70px;
+  width: 100%;
+  border-bottom: 1px #dddddd solid;
+}
+#_domain_sub_wrap .subnav {
+  height: 30px;
+  padding-top: 5px;
+  width: 1000px;
+  background: #fff;
+  text-align: right;
+  border-bottom: 1px #dddddd solid;
+  letter-spacing: 0;
+  z-index: 99;
+  margin: 0 auto;
+}
+#_domain_sub_wrap .subnav h2 {
+  font-size: 16px;
+  line-height: 26px;
+  color: #66c6f2;
+  font-weight: normal;
+  width: 140px;
+  text-align: center;
+}
+#_domain_sub_wrap .subnav li,
+#_domain_sub_wrap .subnav span,
+#_domain_sub_wrap .subnav a {
+  display: inline-block;
+  *display: inline;
+  _display: inline;
+  zoom: 1;
+}
+#_domain_sub_wrap .subnav li {
+  width: 100px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 30px;
+  text-align: center;
+  margin-right: 5px;
+}
+#_domain_sub_wrap .subnav a {
+  position: relative;
+  z-index: 1;
+  line-height: 26px;
+  height: 30px;
+  color: #787878;
+  letter-spacing: 0em;
+}
+#_domain_sub_wrap .subnav .subline {
+  display: none;
+  z-index: -1px;
+  width: 100px;
+  height: 3px;
+  text-align: center;
+  line-height: 0;
+  position: absolute;
+  left: -132px;
+  top: 27px;
+}
+#_domain_sub_wrap .subnav em {
+  width: 62px;
+  height: 3px;
+  background: #fdb94d;
+}
+#_domain_sub_wrap .subnav .client {
+    background: none;
+    width: 80px;
+    height: 26px;
+    padding-left: 8px;
+}
+#_domain_sub_wrap .subnav .fr {
+  white-space: nowrap !important;
+  position: relative;
+  letter-spacing: -0.31em;
+  *letter-spacing: normal;
+  z-index: 9;
+  cursor: default;
+  margin-right: 10px;
+}
+
+/*搜索条*/
+#_domain_zhaozu .search_wrap {
+  margin: auto;
+  width: 596px;
+  padding: 25px 80px;
+}
+#_domain_zhaozu .search_bg {
+  height: 400px;
+  position: relative;
+  /* 律师声明 */
+}
+
+/* 新增左侧资讯和广告 */
+#_domain_zhaozu .new_advert {
+  width: 1000px;
+  padding: 27px 0px;
+  /*padding-bottom: 80px;*/
+  *zoom: 1;
+}
+#_domain_zhaozu .new_advert:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#_domain_zhaozu .new_advert .zixun_ad {
+  width: 210px;
+  /*min-height: 500px;*/
+  float: left;
+  margin-bottom: 0;
+  padding-right: 10px;
+}
+#_domain_zhaozu .new_advert .zixun_ad .slide_details {
+  border: none;
+  float: none;
+}
+#_domain_zhaozu .new_advert .zixun_ad .ad_pic {
+  width: 100%;
+  margin-top: 25px;
+}
+#_domain_zhaozu .new_advert .zixun_ad .ad_pic a {
+  width: 190px;
+  height: 60px;
+  background: #ccc;
+  display: block;
+  margin-top: 10px;
+  margin-left: 12px;
+  background: none;
+}
+/*#_domain_zhaozu .new_advert .search_re {
+  width: 600px;
+  float: right;
+  position: relative;
+  padding: 80px 50px 0 125px;
+  border-left: 1px solid #dddddd;
+  min-height: 496px;
+}*/
+#_domain_zhaozu .new_advert .search_re {
+  width: 725px;
+  float: right;
+  position: relative;
+  padding: 0px 50px 0 0px;
+  border-left: 1px solid #dddddd;
+  min-height: 416px;
+  height:100px;
+}
+#_domain_zhaozu .new_advert.search_bg {
+  height: auto;
+}
+#_domain_zhaozu .new_advert .slide_details {
+  /*详情页*/
+  float: left;
+  position: relative;
+  left: 1px;
+  width: 208px;
+  border-right: 1px solid #dddddd;
+  padding-right: 5px;
+}
+#_domain_zhaozu .new_advert .slide_details a {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-top: 12px;
+  margin-bottom: 13px;
+  padding-left: 20px;
+  text-align: left;
+  color: #545454;
+  /* font-family: "Microsoft YaHei";*/
+  font-size: 12px;
+  background: url({$inc}bi.gif) no-repeat 7px center;
+}
+#_domain_zhaozu .new_advert .slide_details a:hover {
+  color: #4FA0E9;
+}
+
+/* footer */
+#_domain_footer {
+  border-top: 1px #dddddd solid;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  clear: both;
+  position: absolute;
+  bottom: 2px;
+  width: 100%;
+  background: #fff;
+}
+#_domain_footer span {
+  color: #aaa;
+  margin: 0 5px;
+}
+#_domain_footer .fr span {
+  padding: 1px 0;
+}
+#_domain_footer a {
+  color: #999;
+}
+#_domain_footer a:hover {
+  color: #787878;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+    background-color: #fff
+}
+::-webkit-scrollbar-button {
+    height: 0;
+    width: 0;
+    display: none
+}
+::-webkit-scrollbar-track,::-webkit-scrollbar-thumb {
+    border: 0
+}
+::-webkit-scrollbar-track {
+    background-color: #fff
+}
+::-webkit-scrollbar-thumb {
+    padding-top: 100px;
+    -webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1),inset -1px -1px 0 rgba(0,0,0,.07);
+    background-color: #dadada;
+    min-height: 28px;
+    border-radius: 4px
+}
+::-webkit-scrollbar-thumb:hover {
+    -webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0,.25);
+    background-color: rgba(0,0,0,.4)
+}
+::-webkit-scrollbar-thumb:active {
+    -webkit-box-shadow: inset 1px 1px 3px rgba(0,0,0,.35);
+    background-color: rgba(0,0,0,.5)
+}
+
+
+</style>
+
+<script src="{$inc}jquery-1.8.3.min.js"></script>
+
+</head>
+<body style="overflow-y: hidden">
+
+	<!-- header -->
+	<div class="nav" id="_domain_nav">
+		<div class='wrap'>
+			<ul>
+				<li class="logo"><a href="/"><img src={$logo} height="44" width="101"></a></li>
+				<li><a rel="chaxun" href=".">电商工具</a></li>
+				<li><a rel="" href="">栏目二</a></li>
+				<li><a rel="" href="">栏目三</a></li>
+				<li><a rel="" href="">栏目四</a></li>
+				<li><a rel="" href="">栏目五</a></li>
+			</ul>
+			<ul class="sc">
+				<a href="/h">
+				<img src="{$inc}help.png">
+				</a>
+			</ul>
+			<script>
+				!function() {
+				    var a = window.location.href.match(/[^\/]\/([a-zA-Z]+)\//),
+				    b = $("#_domain_nav");
+				    try {
+				        b.find('[rel="' + a[1] + '"]').addClass("cur")
+				    } catch(c) {
+				        b.find("a").eq(1).addClass("cur");
+				    }
+				} ();
+			</script>
+		</div>
+	</div>
+
+	<!-- gongjuNav -->
+	<div class="wrap sub_wrap" id="_domain_sub_wrap" style="margin-bottom: 0px;">
+		<div class="subnav" id="submenu">
+			<h2 class="fl">电商工具</h2>
+			<ul class="fr">
+				<span class="down client" href=""></span>
+			</ul>
+			<ul class="fr">
+        <li rel='g'><a href="{$p_href}" >淘宝排名</a></li>
+        <li rel='x'><a href="{$x_href}" >淘宝信用</a></li>
+        <li rel='j'><a href="{$j_href}" >淘宝降权</a></li>
+        <li rel='l'><a href="{$l_href}" >宝贝类目</a></li>
+        <li rel='b'><a href="{$b_href}" >百度排名</a></li>
+        <li rel='s'><a href="{$s_href}" ><span>360</span>排名</a></li>
+			</ul>
+		</div>
+	</div>
+	<script>
+		!function() {
+		    var a = window.location.href.match(/[^\/]\/g\/([a-zA-Z]+)\//),
+		    b = $("#submenu");
+		    try {
+		        b.find('[rel="' + a[1] + '"]').addClass("cur")
+		    } catch(c) {
+		        b.find("li").eq(0).addClass("cur")
+		    }
+		} ();
+	</script>
+
+	<!-- 电商工具_淘宝排名 -->
+  <div id="_domain_zhaozu">
+  	<div class="search_wrap new_advert search_bg">
+  		<div class="zixun_ad">
+  			<div class="slide_details">
+          <a target="_blank" href="/p.php?go=http://www.kehuda.com/a/l/" target="_blank">文字广告位一</a>
+          <a target="_blank" href="/p.php?go=http://www.kehuda.com/a/l/" target="_blank">文字广告位二</a>
+          <a target="_blank" href="/p.php?go=http://www.kehuda.com/a/l/" target="_blank">文字广告位三</a>
+          <a target="_blank" href="/p.php?go=http://www.kehuda.com/a/l/" target="_blank">文字广告位四</a>
+  			</div>
+  			<div class="ad_pic">
+          <a target="_blank" href="/p.php?go=http://www.kehuda.com/go?id=62" target="_blank"><img src="http://d.sududa.com/kehuda/ad/800.gif"></a>
+          <a target="_blank" href="/p.php?go=http://www.kehuda.com/a/l/" target="_blank"><img src="http://www.kehuda.com/images/adsense.jpg"></a>
+          <a target="_blank" href="/p.php?go=http://www.kehuda.com/a/l/" target="_blank"><img src="http://www.kehuda.com/images/adsense.jpg"></a>
+  			</div>
+  		</div>
+
+  		<div class="search_re">
+        {$iframe}
+        <div style='position:absolute;top:-9999px'>{$body}</div>
+      </div>
+  	</div>
+  </div>
+
+    <script src="{$inc}fengs.1.0.js?1475021659600"></script>
+    <script>Fengs.config({locals:{name:"static",path:"/"},remote:{api:["/"],js:['http://www.kehuda.com/kehuda','http://www.kehuda.com/kehuda']},tag:"1475021659600",depend:["prototype"]});</script>
+
+	<script>Fengs.use("kehuda/gongju/taobaorank");</script>
+
+	<div class="footer" id="_domain_footer">
+		<div class='wrap'>
+			<div class="fl">
+				
+				<a href="/p.php?go=http://www.kehuda.com/a/j" target="_blank">接口调用</a>
+				<span>|</span>
+				
+				<a href="http://www.baidu.com/s?wd=%E6%B7%98%E5%AE%9D%20%E5%AE%A2%E6%88%B7%E8%BE%BE" target="_blank">了解更多</a>
+			</div>
+			<div class="fr">
+				<span><a href="http://www.miitbeian.gov.cn/" target="_blank">{$copyright}</a></span>
+			</div>
+		</div>
+	</div>
+
+	<div class="wrap tc clear" style="display:none;">
+		<a href="http://szcert.ebs.org.cn/e4bc63a9-e134-4f6d-9fbc-bbe6ec9ecd88" target="new">
+			<img style="padding-bottom: 30px;" src="http://szcert.ebs.org.cn/Images/newGovIcon.gif" height="40" width="112"/>
+		</a>
+	</div>
+	<div id="adTxt" style="display:none;"></div>
+
+
+</body>
+</html>
