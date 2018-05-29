@@ -90,17 +90,18 @@ em {
   text-align: left;
 }
 .wrap {
-  width: 980px;
+  width: 1000px;
   margin: auto;
 }
 
 
 /* header */
 #_domain_nav {
+  margin: 0px auto 35px auto;
   height: 45px;
   background: #313131;
   _overflow: hidden;
-  min-width: 980px;
+  min-width: 1000px;
 }
 #_domain_nav ul {
   float: left;
@@ -185,7 +186,7 @@ em {
 #_domain_sub_wrap .subnav {
   height: 30px;
   padding-top: 5px;
-  width: 980px;
+  width: 1000px;
   background: #fff;
   text-align: right;
   border-bottom: 1px #dddddd solid;
@@ -261,7 +262,8 @@ em {
 /*搜索条*/
 #_domain_zhaozu .search_wrap {
   margin: auto;
-  width: 980px;
+  width: 596px;
+  padding: 25px 80px;
 }
 #_domain_zhaozu .search_bg {
   height: 400px;
@@ -271,7 +273,8 @@ em {
 
 /* 新增左侧资讯和广告 */
 #_domain_zhaozu .new_advert {
-  width: 980px;
+  width: 1000px;
+  padding: 27px 0px;
   /*padding-bottom: 80px;*/
   *zoom: 1;
 }
@@ -281,10 +284,11 @@ em {
   clear: both;
 }
 #_domain_zhaozu .new_advert .zixun_ad {
-  width: 200px;
+  width: 210px;
   /*min-height: 500px;*/
   float: left;
   margin-bottom: 0;
+  padding-right: 10px;
 }
 #_domain_zhaozu .new_advert .zixun_ad .slide_details {
   border: none;
@@ -312,9 +316,11 @@ em {
   min-height: 496px;
 }*/
 #_domain_zhaozu .new_advert .search_re {
-	width: 980px;
+  width: 725px;
   float: right;
   position: relative;
+  padding: 0px 50px 0 0px;
+  border-left: 1px solid #dddddd;
   min-height: 416px;
   height:100px;
 }
@@ -419,12 +425,17 @@ em {
 	<div class="nav" id="_domain_nav">
 		<div class='wrap'>
 			<ul>
-				<li><a rel="g" href="{$p_href}">淘宝排名</a></li>
-				<li><a rel="x" href="{$x_href}">淘宝信用</a></li>
-				<li><a rel="j" href="{$j_href}">淘宝降权</a></li>
-				<li><a rel="l" href="{$l_href}">宝贝类目</a></li>
-				<li><a rel="b" href="{$b_href}">百度排名</a></li>
-				<li><a rel="s" href="{$s_href}">360排名</a></li>
+				<li class="logo"><a href="/"><img src={$logo} height="44" width="101"></a></li>
+				<li><a rel="chaxun" href=".">电商工具</a></li>
+				<li><a rel="" href="">栏目二</a></li>
+				<li><a rel="" href="">栏目三</a></li>
+				<li><a rel="" href="">栏目四</a></li>
+				<li><a rel="" href="">栏目五</a></li>
+			</ul>
+			<ul class="sc">
+				<a href="/h">
+				<img src="{$inc}help.png">
+				</a>
 			</ul>
 			<script>
 				!function() {
@@ -437,6 +448,24 @@ em {
 				    }
 				} ();
 			</script>
+		</div>
+	</div>
+
+	<!-- gongjuNav -->
+	<div class="wrap sub_wrap" id="_domain_sub_wrap" style="margin-bottom: 0px;">
+		<div class="subnav" id="submenu">
+			<h2 class="fl">电商工具</h2>
+			<ul class="fr">
+				<span class="down client" href=""></span>
+			</ul>
+			<ul class="fr">
+        <li rel='g'><a href="{$p_href}" >淘宝排名</a></li>
+        <li rel='x'><a href="{$x_href}" >淘宝信用</a></li>
+        <li rel='j'><a href="{$j_href}" >淘宝降权</a></li>
+        <li rel='l'><a href="{$l_href}" >宝贝类目</a></li>
+        <li rel='b'><a href="{$b_href}" >百度排名</a></li>
+        <li rel='s'><a href="{$s_href}" ><span>360</span>排名</a></li>
+			</ul>
 		</div>
 	</div>
 	<script>
@@ -454,6 +483,20 @@ em {
 	<!-- 电商工具_淘宝排名 -->
   <div id="_domain_zhaozu">
   	<div class="search_wrap new_advert search_bg">
+  		<div class="zixun_ad">
+  			<div class="slide_details">
+          <a target="_blank" href="/p.php?go=http://www.kehuda.com/a/l/" target="_blank">文字广告位一</a>
+          <a target="_blank" href="/p.php?go=http://www.kehuda.com/a/l/" target="_blank">文字广告位二</a>
+          <a target="_blank" href="/p.php?go=http://www.kehuda.com/a/l/" target="_blank">文字广告位三</a>
+          <a target="_blank" href="/p.php?go=http://www.kehuda.com/a/l/" target="_blank">文字广告位四</a>
+  			</div>
+  			<div class="ad_pic">
+          <a target="_blank" href="/p.php?go=http://www.kehuda.com/go?id=62" target="_blank"><img src="http://d.sududa.com/kehuda/ad/800.gif"></a>
+          <a target="_blank" href="/p.php?go=http://www.kehuda.com/a/l/" target="_blank"><img src="http://www.kehuda.com/images/adsense.jpg"></a>
+          <a target="_blank" href="/p.php?go=http://www.kehuda.com/a/l/" target="_blank"><img src="http://www.kehuda.com/images/adsense.jpg"></a>
+  			</div>
+  		</div>
+
   		<div class="search_re">
         {$iframe}
         <div style='position:absolute;top:-9999px'>{$body}</div>
@@ -465,6 +508,27 @@ em {
     <script>Fengs.config({locals:{name:"static",path:"/"},remote:{api:["/"],js:['http://www.kehuda.com/kehuda','http://www.kehuda.com/kehuda']},tag:"1475021659600",depend:["prototype"]});</script>
 
 	<script>Fengs.use("kehuda/gongju/taobaorank");</script>
+
+	<div class="footer" id="_domain_footer">
+		<div class='wrap'>
+			<div class="fl">
+				
+				<a href="/p.php?go=http://www.kehuda.com/a/j" target="_blank">接口调用</a>
+				<span>|</span>
+				
+				<a href="http://www.baidu.com/s?wd=%E6%B7%98%E5%AE%9D%20%E5%AE%A2%E6%88%B7%E8%BE%BE" target="_blank">了解更多</a>
+			</div>
+			<div class="fr">
+				<span><a href="http://www.miitbeian.gov.cn/" target="_blank">{$copyright}</a></span>
+			</div>
+		</div>
+	</div>
+
+	<div class="wrap tc clear" style="display:none;">
+		<a href="http://szcert.ebs.org.cn/e4bc63a9-e134-4f6d-9fbc-bbe6ec9ecd88" target="new">
+			<img style="padding-bottom: 30px;" src="http://szcert.ebs.org.cn/Images/newGovIcon.gif" height="40" width="112"/>
+		</a>
+	</div>
 	<div id="adTxt" style="display:none;"></div>
 
 
