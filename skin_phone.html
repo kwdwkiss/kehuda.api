@@ -111,22 +111,22 @@ footer a{margin: 0 0.5rem 0 0.2rem;color: #AAAAAA;font-size: 1.2rem;}
                 <a href=""></a>
             </li>
             <li id="k"><a href="http://www.tbpzw.com">宏海网络</a></li>
-            <li id="g"><a href="/">查询工具</a></li>
-            <li class='k-menu' id="k-menu">
-                <label class='k-menu-lable' for="khd-menustate">
-                    <div class='k-menu-icon'>
-                        <span class='k-top k-act-top'></span>
-                        <span class='k-bot k-act-bot'></span>
-                    </div>
-                </label>
-            </li>
+            <li id="g" class="cur"><a href="/">查询工具</a></li>
+            <!--<li class='k-menu' id="k-menu">-->
+                <!--<label class='k-menu-lable' for="khd-menustate">-->
+                    <!--<div class='k-menu-icon'>-->
+                        <!--<span class='k-top k-act-top'></span>-->
+                        <!--<span class='k-bot k-act-bot'></span>-->
+                    <!--</div>-->
+                <!--</label>-->
+            <!--</li>-->
         </ul>
         <script>
         !function(){
             var c,e,f,a=window.location.href.match(/[^\/]\/([a-zA-Z]+)\//),
             b=document.getElementById("nav"),d=b.children;
             if (a) {if (a[1]=='a') return;};
-            for(e=0,f=d.length;f>e;e++)null!==a&&d[e].id===a[1]&&(c=e);c||(c=1),d[c].className="cur";
+            //for(e=0,f=d.length;f>e;e++)null!==a&&d[e].id===a[1]&&(c=e);c||(c=1),d[c].className="cur";
 
             // 二级菜单
             var menuOff = true,$kHeader = $('#k-header');
