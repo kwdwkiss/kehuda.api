@@ -166,7 +166,7 @@ if ($key == "a") {
 $title = ${$key . "_title"};
 $introduction = ${$key . "_body"};
 
-$show_content_file=file_get_contents($mp ? "skin_phone.html": "skin.html");
+$show_content_file=file_get_contents($mp ? "skin_phone.html": "skin_phone.html");
 
 $pre_img="http://".$_SERVER['HTTP_HOST'].$pre_uri."/";//当前页面地址
 $pre_inc="http://".$_SERVER['HTTP_HOST'].$pre_uri."/inc/";//inc目录地址
